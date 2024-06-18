@@ -5,38 +5,37 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css">
     <title>WikiTube</title>
   </head>
   <body onload="onInit()" >
 
     <header>
-
-      <h1>Wikitube</h1>
-
-      <form onsubmit="onLoad(event)">
-        <input type="search" name="search" placeholder="Search" />
-        <button type="submit">Search</button>
-    </form>
-      
-    </header>
-
-    <div class="container">
-        <div class="video-player"></div>
-        <div class="vids-container"></div>
+        <h1>Wikitube</h1>
+        <form onsubmit="onLoad(event)">
+          <input type="search" name="search" placeholder="Search" />
+          <button type="submit">Search</button>
+        </form>
+      </header>
+    
+      <div class="container">
+        <div class="right-container">
+            <div class="video-player"></div>
+            <div class="wiki-res"></div>
+        </div>
+        <div class="videos-container"></div>
       </div>
-
-      <div class="wiki-res"></div>
-    </div>
-
-    <footer>
-      <div class="search-history"></div>
-    </footer>
+    
+      
+    
+      <footer>
+        <div class="search-history"></div>
+      </footer>
 
     <script src="lib/axios.js"></script>
     <script src="lib/swal.js"></script>
     <script src="js/service/util.service.js"></script>
-    <script src="js/service/wiki.service.js"></script>
-    <script src="js/service/youtube.service.js"></script>
+    <script src="js/service/wikitube.service.js"></script>
     <script src="js/wikitube.controller.js"></script>
   </body>
 </html>
